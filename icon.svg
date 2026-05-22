@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Fond dégradé bleu médical -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0056b3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#003d82;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="stethoscopeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fond circulaire -->
+  <circle cx="256" cy="256" r="256" fill="url(#bgGradient)"/>
+  
+  <!-- Stéthoscope stylisé -->
+  <!-- Tubes du stéthoscope (Y inversé) -->
+  <path d="M 256 80 Q 200 150 180 200 Q 170 230 180 260" 
+        stroke="url(#stethoscopeGradient)" stroke-width="24" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 256 80 Q 312 150 332 200 Q 342 230 332 260" 
+        stroke="url(#stethoscopeGradient)" stroke-width="24" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Tube principal vertical -->
+  <path d="M 256 280 Q 256 320 256 380" 
+        stroke="url(#stethoscopeGradient)" stroke-width="24" fill="none" stroke-linecap="round"/>
+  
+  <!-- Diaphragme (cercle au bas) -->
+  <circle cx="256" cy="420" r="45" fill="none" stroke="url(#stethoscopeGradient)" stroke-width="20"/>
+  <circle cx="256" cy="420" r="30" fill="none" stroke="url(#stethoscopeGradient)" stroke-width="8" opacity="0.6"/>
+  
+  <!-- Écouteurs (petits cercles en haut) -->
+  <circle cx="200" cy="70" r="16" fill="url(#stethoscopeGradient)"/>
+  <circle cx="312" cy="70" r="16" fill="url(#stethoscopeGradient)"/>
+  
+  <!-- Croix médicale en arrière-plan (subtile) -->
+  <g opacity="0.15">
+    <rect x="440" y="200" width="40" height="120" rx="5" fill="white"/>
+    <rect x="420" y="220" width="80" height="40" rx="5" fill="white"/>
+  </g>
+  
+  <!-- Texte ou badge (optionnel) -->
+  <circle cx="470" cy="70" r="35" fill="#00d084" opacity="0.9"/>
+  <text x="470" y="82" font-size="48" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial, sans-serif">+</text>
+</svg>
