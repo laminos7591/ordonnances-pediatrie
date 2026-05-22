@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordo Pédiatrie Pro</title>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <h1>Ordo Pédiatrie Pro</h1>
+    <input type="text" id="search" placeholder="Rechercher..." onkeyup="filter()">
+    <div id="content"></div>
+    <script>
+        fetch('data.json').then(res=>res.json()).then(data => {
+            window.appData = data;
+            render(data);
+        });
+        function render(data) {
+            document.getElementById('content').innerHTML = Object.keys(data).map(chap => 
+                `<h2>${chap}</h2>` + Object.keys(data[chap]).map(path => `<div class='item'>${path} (p.${data[chap][path].page})</div>`).join('')
+            ).join('');
+        }
+        function filter() { /* ... logique de filtre ... */ }
+    </script>
+</body>
+</html>

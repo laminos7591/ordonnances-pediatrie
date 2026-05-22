@@ -1,0 +1,50 @@
+{
+    "Dermatologie": {
+        "Acné de l'adolescent": {
+            "page": 1
+        },
+        "Dermatite atopique": {
+            "page": 5
+        }
+    },
+    "Digestif_Nutrition": {
+        "Coliques du nourrisson": {
+            "page": 49
+        },
+        "Constipation": {
+            "page": 53
+        }
+    },
+    "Endocrinologie_Metabolisme": {
+        "Diabète de l'enfant": {
+            "page": 97
+        },
+        "Obésité": {
+            "page": 109
+        }
+    },
+    "Hematologie_Immunologie": {
+        "Adénopathies": {
+            "page": 119
+        },
+        "Anémie": {
+            "page": 121
+        }
+    },
+    "Neurologie_Pedopsychiatrie": {
+        "Crise convulsive": {
+            "page": 157
+        },
+        "Douleur aiguë": {
+            "page": 161
+        }
+    },
+    "ORL_Ophtalmologie": {
+        "Angine": {
+            "page": 179
+        },
+        "Grippe": {
+            "page": 189
+        }
+    }
+}
